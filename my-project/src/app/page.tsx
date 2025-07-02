@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { countries } from "../../../_shared";
 
 export default function Home() {
   return (
@@ -45,6 +46,8 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+        {countries.map((country) => country.name)}
       </main>
       <footer className={styles.footer}>
         <a
